@@ -30,16 +30,16 @@
     </xs:restriction>
   </xs:simpleType>
   
-  <xs:attributeGroup name="lceAnswerlenghAtt-d-attribute">
-    <xs:attribute name="answerlengh" type="answerlengh-atts.class" use="optional">
+  <xs:attributeGroup name="lceAnswerlengthAtt-d-attribute">
+    <xs:attribute name="answerlength" type="answerlength-atts.class" use="optional">
       <xs:annotation>
-        <xs:documentation>This attribute should only be uesd with gap answer elements. If the lengh for a gab is not defined than the output applicatie has to.
+        <xs:documentation>This attribute should only be uesd with gap answer elements. If the length for a gab is not defined than the output applicatie has to.
         </xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:attributeGroup>
   
-  <xs:simpleType name="answerlengh-atts.class">
+  <xs:simpleType name="answerlength-atts.class">
     <xs:restriction base="xs:string">
       <xs:enumeration value="xs"/>
       <xs:enumeration value="s"/>
