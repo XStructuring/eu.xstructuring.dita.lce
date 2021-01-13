@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceacrosticinteraction-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    
+    
+    <!-- =============================================== -->
+
+    
+    <xs:group name="lceAcrosticPuzzle">
+        <xs:sequence>
+            <xs:element ref="lceAcrosticPuzzle" />
+        </xs:sequence>
+    </xs:group>
+    
+  <!-- ============================================= -->  
+ 
+    <xs:element name="lceAcrosticPuzzle">
+        <xs:annotation>
+            <xs:documentation>
+                Interaction in which the student has to fill in words in a grid. All words are outlined horizontal.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAcrosticPuzzle.class">
+                    <xs:attribute ref="class" default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceacrosticinteraction-d/lceAcrosticPuzzle "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAcrosticPuzzle.class">
+        <xs:sequence>
+            <xs:group ref="lceAcrosticPuzzle.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAcrosticPuzzle.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAcrosticPuzzle.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lcePuzzleGrid" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcePuzzleOptionGroup" minOccurs="1" maxOccurs="1"/>
+            <xs:group ref="lcePuzzleSolution" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAcrosticPuzzle.attributes">
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attribute name="id" type="xs:NMTOKEN" use="required"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+</xs:schema>

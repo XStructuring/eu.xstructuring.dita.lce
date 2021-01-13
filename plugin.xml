@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="dita13-lc-extra-interactions">
+	<feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
+</plugin>

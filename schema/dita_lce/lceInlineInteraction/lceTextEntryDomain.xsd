@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcetextentry-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceTextEntry">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceTextEntry"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceTextEntryOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    
+<!-- ============================================================= -->
+    
+    <xs:element name="lceTextEntry">
+        <xs:annotation>
+            <xs:documentation>
+                The lceTextEntry is a textual interaction in which a student has to fill in a gap.
+                Beside the correct answer alternative answers can be defined which are still soort of correct but less scoring.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceTextEntry.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcetextentry-d/lceTextEntry "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceTextEntry.class">
+        <xs:sequence>
+            <xs:group ref="lceTextEntry.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceTextEntry.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceTextEntry.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lcAsset2" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceInlineInteractionText"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceTextEntry.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceTextEntryOptions">
+        <xs:annotation>
+            <xs:documentation>
+                In the lceTextEntryOptions the correct and alternatives answers are defined.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceTextEntryOptions.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph lcetextentry-d/lceTextEntryOptions "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceTextEntryOptions.class">
+        <xs:sequence>
+            <xs:group ref="lceTextEntryOptions.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceTextEntryOptions.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceTextEntryOptions.content">
+        <xs:sequence>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceTextEntryOptions.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+   
+</xs:schema>

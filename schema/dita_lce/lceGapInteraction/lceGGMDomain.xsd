@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceggm-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceGraphicGapMatch">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicGapMatch"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceGGMMap">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGGMMap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceAreaGGM">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceAreaGGM"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+<!-- ================================================================= -->
+      
+    <xs:element name="lceGGMMap">
+        <xs:annotation>
+            <xs:documentation>A lceGGMMap interaction lets you designate an action area or region over an image, allowing to drag and drop in that region to get scored as correct or incorrect in response to an interaction question. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGGMMap.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/fig learningInteractionBase2-d/fig lceggm-d/lceGGMMap "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGGMMap.class">
+        <xs:sequence>
+            <xs:group ref="lceGGMMap.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGGMMap.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGGMMap.content">
+        <xs:sequence>
+            <xs:group ref="image"/>
+            <xs:group ref="lceAreaGGM" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGGMMap.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceAreaGGM">
+        <xs:annotation>
+            <xs:documentation>A lceAreaGGM defines an area on the image where the answer must be dropped </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceAreaGGM.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lceggm-d/lceAreaGGM "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceAreaGGM.class">
+        <xs:sequence>
+            <xs:group ref="lceAreaGGM.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceAreaGGM.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceAreaGGM.content">
+        <xs:sequence>
+            <xs:group ref="lceGap"/>
+            <xs:group ref="lcAreaShape2" minOccurs="1"/>
+            <xs:group ref="lcAreaCoords2" minOccurs="1"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceAreaGGM.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+     
+    <xs:element name="lceGraphicGapMatch">
+        <xs:annotation>
+            <xs:documentation>In a lceGraphicGapMatch interaction, the learner drag en drop text and/or images to an image </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGraphicGapMatch.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceggm-d/lceGraphicGapMatch "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGraphicGapMatch.class">
+        <xs:sequence>
+            <xs:group ref="lceGraphicGapMatch.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGraphicGapMatch.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGraphicGapMatch.content">
+        <xs:sequence>
+            <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
+            <xs:group ref="lcQuestion2"/>
+            <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceGGMMap"/>
+            <xs:group ref="lceGapOptionGroup"/>
+            <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
+            <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGraphicGapMatch.attributes">
+        <xs:attribute name="id" type="xs:NMTOKEN"/>
+        <xs:attributeGroup ref="conref-atts"/>
+        <xs:attributeGroup ref="select-atts"/>
+        <xs:attributeGroup ref="localization-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+
+
+
+</xs:schema>
