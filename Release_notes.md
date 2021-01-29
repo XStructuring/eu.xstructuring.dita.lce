@@ -24,3 +24,5 @@
 ## Version 2.2
 * Add new interactions: lceChainMatching - matching items from more than two bukkets
 
+## Version 2.1
+* Add new interaction: GraphicTextEntry
