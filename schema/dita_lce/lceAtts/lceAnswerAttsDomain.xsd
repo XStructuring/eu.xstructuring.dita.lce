@@ -61,7 +61,12 @@
     <xs:simpleType name="answerformat-atts.class">
       <xs:restriction base="xs:string">
         <xs:enumeration value="text"/>
-        <xs:enumeration value="numerical"/>
+        <xs:enumeration value="decimalpoint"/>
+        <xs:enumeration value="decimalcomma"/>
+        <xs:enumeration value="integer"/>
+        <xs:enumeration value="integeranglosaxon"/>
+        <xs:enumeration value="date"/>
+        <xs:enumeration value="time"/>
       </xs:restriction>
   </xs:simpleType>
   
