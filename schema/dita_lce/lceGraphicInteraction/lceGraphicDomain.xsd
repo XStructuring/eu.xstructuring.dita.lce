@@ -12,7 +12,8 @@
                 <xs:element ref="lceDrawing"/>
                 <xs:element ref="lceGraphicTextEntry"/>
                 <xs:element ref="lceGraphicAssociate"/>
-                <xs:element ref="lceHotspot"></xs:element>
+                <xs:element ref="lceGraphicHotspot"/>
+                <xs:element ref="lceGraphicGapMatch2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
@@ -23,7 +24,8 @@
                 <xs:element ref="lceDrawing"/>
                 <xs:element ref="lceGraphicTextEntry"/>
                 <xs:element ref="lceGraphicAssociate"/>
-                <xs:element ref="lceHotspot"></xs:element>
+                <xs:element ref="lceGraphicHotspot"/>
+                <xs:element ref="lceGraphicGapMatch2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>

@@ -65,7 +65,7 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceFeedbackDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceDataDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lcePerformDomain.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGTEDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicTextEntryDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGapDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceChainMatchingDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicAssociateDomain.xsd"/>
@@ -75,7 +75,9 @@
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceBoxDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceBrDomainMod.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceRefpointDomainMod.xsd"/>
-   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceHotspotDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicHotspotDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicBaseDomain.xsd"/>
+   <xs:include schemaLocation="urn:dita13lce:names:xsd:lceGraphicGapMatchDomain.xsd"/>
    
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceAnswerAttsDomain.xsd"/>
    <xs:include schemaLocation="urn:dita13lce:names:xsd:lceOrientationAttsDomain.xsd"/>
@@ -168,7 +170,7 @@
          <xs:attributeGroup ref="lceAnswertypeAtt-d-attribute"/>
          <xs:attributeGroup ref="lceOrientationAtt-d-attribute"/>
          <xs:attributeGroup ref="lceEduAtt-d-attribute"/>
-         <xs:attributeGroup ref="lceAnswerlenghAtt-d-attribute"/>
+         <xs:attributeGroup ref="lceAnswerlengthAtt-d-attribute"/>
          <xs:attributeGroup ref="lcePlaceholderAtt-d-attribute"/>
       </xs:attributeGroup>
       

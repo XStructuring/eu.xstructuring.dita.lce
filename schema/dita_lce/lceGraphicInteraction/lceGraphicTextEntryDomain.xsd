@@ -14,89 +14,40 @@
         </xs:sequence>
     </xs:group>
     
-    <xs:group name="lceGTEMap">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceGTEMap"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
-    
-    <xs:group name="lceAreaGTE">
-        <xs:sequence>
-            <xs:choice>
-                <xs:element ref="lceAreaGTE"/>
-            </xs:choice>
-        </xs:sequence>
-    </xs:group>
     
 <!-- ================================================================= -->
-    
-    
-    <xs:element name="lceGTEMap">
+  
+    <xs:element name="lceTextEntryGroup">
         <xs:annotation>
-            <xs:documentation>A lceGTEMap is the container for the solution and the area on the image.</xs:documentation>
+            <xs:documentation>A lceTextEntryGroup contains the response options for the gaps</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceGTEMap.class">
+                <xs:extension base="lceTextEntryGroup.class">
                     <xs:attribute ref="class"
-                        default="+ topic/fig learningInteractionBase2-d/fig lcegraphictextentry-d/lceGTEMap "/>
+                        default="+ topic/p learningInteractionBase2-d/p lcegapinteraction-d/lceTextEntryGroup "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGTEMap.class">
+    <xs:complexType name="lceTextEntryGroup.class">
         <xs:sequence>
-            <xs:group ref="lceGTEMap.content"/>
+            <xs:group ref="lceTextEntryGroup.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceGTEMap.attributes"/>
+        <xs:attributeGroup ref="lceTextEntryGroup.attributes"/>
     </xs:complexType>
-    <xs:group name="lceGTEMap.content">
+    <xs:group name="lceTextEntryGroup.content">
         <xs:sequence>
-            <xs:group ref="image"/>
-            <xs:group ref="lceAreaGTE" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:group ref="lceTextEntryOptions" minOccurs="1" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceGTEMap.attributes">
+    <xs:attributeGroup name="lceTextEntryGroup.attributes">
         <xs:attributeGroup ref="univ-atts"/>
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
     
-    <xs:element name="lceAreaGTE">
-        <xs:annotation>
-            <xs:documentation>A lceAreaGTE defines an area on the image where the answer must be entered </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="lceAreaGTE.class">
-                    <xs:attribute ref="class"
-                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lceggm-d/lceAreaGGM "/>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="lceAreaGTE.class">
-        <xs:sequence>
-            <xs:group ref="lceAreaGTE.content"/>
-        </xs:sequence>
-        <xs:attributeGroup ref="lceAreaGTE.attributes"/>
-    </xs:complexType>
-    <xs:group name="lceAreaGTE.content">
-        <xs:sequence>
-            <xs:group ref="lceAnswerOptionInline" maxOccurs="unbounded"/>
-            <xs:group ref="lcAreaShape2" minOccurs="0"/>
-            <xs:group ref="lcAreaCoords2" minOccurs="0"/>
-            <xs:group ref="lcFeedback2" minOccurs="0"/>
-        </xs:sequence>
-    </xs:group>
-    <xs:attributeGroup name="lceAreaGTE.attributes">
-        <xs:attributeGroup ref="univ-atts"/>
-        <xs:attribute name="outputclass" type="xs:string"/>
-        <xs:attributeGroup ref="global-atts"/>
-    </xs:attributeGroup>
-     
+    
     <xs:element name="lceGraphicTextEntry">
         <xs:annotation>
             <xs:documentation>In a lceGraphicTextEntry interaction the learner fills in a gap on an image </xs:documentation>
@@ -121,7 +72,7 @@
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:group ref="lceGTEMap"/>
+            <xs:group ref="lceGraphicInteractionMap"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
