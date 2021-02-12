@@ -262,5 +262,25 @@
     <uri name="urn:dita13lce:names:xsd:lceCrossWordInteractionDomain.xsd" uri="lceCrossWordInteractionDomain.xsd" />
   </group>
   
+  <group xml:base="lceRedisgnedInteraction/">
+    <system systemId="lceChoiceInteractionDomain.xsd" uri="lceChoiceInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceChoiceInteractionDomain.xsd" uri="lceChoiceInteractionDomain.xsd" />
+    
+    <uri name="lceChoiceInteractionDomain.xsd" uri="lceChoiceInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceChoiceInteractionDomain.xsd" uri="lceChoiceInteractionDomain.xsd" />
+    
+    <system systemId="lceOderInteractionDomain.xsd" uri="lceOderInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceOderInteractionDomain.xsd" uri="lceOderInteractionDomain.xsd" />
+    
+    <uri name="lceOderInteractionDomain.xsd" uri="lceOderInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceOderInteractionDomain.xsd" uri="lceOderInteractionDomain.xsd" />
+    
+    <system systemId="lceRedesignedInteractionDomain.xsd" uri="lceRedesignedInteractionDomain.xsd" />
+    <system systemId="urn:dita13lce:names:xsd:lceRedesignedInteractionDomain.xsd" uri="lceRedesignedInteractionDomain.xsd" />
+    
+    <uri name="lceRedesignedInteractionDomain.xsd" uri="lceRedesignedInteractionDomain.xsd" />
+    <uri name="urn:dita13lce:names:xsd:lceRedesignedInteractionDomain.xsd" uri="lceRedesignedInteractionDomain.xsd" />
+  </group>
+  
   
 </catalog>
