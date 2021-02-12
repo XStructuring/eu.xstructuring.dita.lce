@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:3.0" id="gte2-2">
+    <title>Number pyramid</title>
+    <learningAssessmentbody>
+        <lcIntro><p>The number pyramid is built as follows: add two number in one row, which are
+                standing next to each other. The result of this is the number above.</p></lcIntro>
+        <lcInteraction>
+            <lceGraphicTextEntry>
+                <lcQuestion2><p>Fill in the missing numbers.</p></lcQuestion2>
+                <lceGraphicInteractionMap>
+                    <image href="counting_pyramid.jpg"/>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-01"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>110,410,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-02"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>270,410,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-03"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>430,410,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-04"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>720,410,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-05"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>180,280,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-05"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>380,280,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-07"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>580,280,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-08"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>250,180,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-09"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>470,180,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte2-2/teo-10"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>50,350,50,50</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                </lceGraphicInteractionMap>
+                <lceTextEntryGroup>
+                    <lceTextEntryOptions id="teo-01">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>3</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-02">
+                        <lceAnswerOptionInline answertype="predefined">
+                            <lceAnswerContentInline>2</lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-03">
+                        <lceAnswerOptionInline answertype="fixed">
+                            <lceAnswerContentInline>3</lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-04">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>3</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-05">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>5</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    
+                    <lceTextEntryOptions id="teo-07">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>6</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-08">
+                        <lceAnswerOptionInline answertype="fixed">
+                            <lceAnswerContentInline>10</lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-09">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>11</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="teo-10">
+                        <lceAnswerOptionInline answertype="fixed">
+                            <lceAnswerContentInline>21</lceAnswerContentInline>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                </lceTextEntryGroup>
+            </lceGraphicTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

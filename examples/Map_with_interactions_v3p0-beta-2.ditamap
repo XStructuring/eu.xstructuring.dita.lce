@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd">
+    <title>Learing content education</title>
+    <topicgroup>
+        <topicmeta>
+            <navtitle>Example LCE learningContent topics</navtitle>
+        </topicmeta>
+        <topicref href="LC_with_objectives.dita"/>
+        <topicref href="LC_with_theory.dita"/>
+    </topicgroup>
+    <topicgroup>
+        <topicmeta>
+            <navtitle>Example LCE learningAssessment topics</navtitle>
+        </topicmeta>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce interations</navtitle>
+            </topicmeta>
+            <topicref href="lcePerformQuestion.dita"/>
+            <topicref href="lceDrawing.dita" navtitle="lceDrawing"/>
+            <topicref href="lceChainMatching.dita"/>
+            <topicref href="lceMultipleMatch.dita"/>
+            <topicref href="lcSingleSelect2_with_explanation.dita"/>
+            <topicref href="lceBox_in_question_intro.dita"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce graphic interactions</navtitle>
+            </topicmeta>
+            <topicref href="lceGaphicAssociate.dita"/>
+            <topicref href="lceHotspot.dita"/>
+            <topicref href="lceGraphicGapMatch_States-2.dita"/>
+            <topicref href="lceGraphicGapMatch-2.dita"/>
+            <topicref href="lceGraphicTextEntry_counting-pyramid-2.dita"/>
+            <topicref href="lceGraphicTextEntry-2.dita"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce inline interactions</navtitle>
+            </topicmeta>
+            <topicref href="lceTextEntry_MrsWhite.dita"/>
+            <topicref href="lceInlineChoice.dita"/>
+            <topicref href="lceHottext.dita"/>
+            <topicref href="lceGapMatch.dita"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce puzzle interactions</navtitle>
+            </topicmeta>
+            <topicref href="lcePuzzle_acrostic.dita"/>
+            <topicref href="lcePuzzle_crossword.dita"/>
+        </topicgroup>
+    </topicgroup>
+    <topicgroup>
+        <topicmeta>
+            <navtitle>Example DITA L+T learningAssessment topics</navtitle>
+        </topicmeta>
+        <topicref href="lcHotspot.dita"/>
+        <topicref href="lcMatching2.dita"/>
+        <topicref href="lcMultipleSelect2.dita"/>
+        <topicref href="lcOpenQuestion2.dita"/>
+        <topicref href="lcSequencing2.dita"/>
+        <topicref href="lcSingleSelect2.dita"/>
+        <topicref href="lcTrueFalse2.dita"/>
+    </topicgroup>
+</map>

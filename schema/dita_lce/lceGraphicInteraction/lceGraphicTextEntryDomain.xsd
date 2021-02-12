@@ -14,6 +14,14 @@
         </xs:sequence>
     </xs:group>
     
+    <xs:group name="lceTextEntryGroup">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceTextEntryGroup"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
     
 <!-- ================================================================= -->
   
@@ -73,6 +81,7 @@
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceGraphicInteractionMap"/>
+            <xs:group ref="lceTextEntryGroup"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>

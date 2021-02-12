@@ -7,7 +7,7 @@
             element lceExplanation is allowed. That couldn't be added to the lcHotspot2 element
             because of its tight content model.</lcIntro>
         <lcInteraction>
-            <lceHotspot>
+            <lceGraphicHotspot>
                 <lcQuestion2><p>Which of these plantes is Saturn?</p>
                     <p>Click on it.</p></lcQuestion2>
                 <lceExplanation>
@@ -18,27 +18,27 @@
                         rocky debris and dust. This is the only planet with a ring</p>
                     <image href="Saturnus.jpg" id="image_s2x_1d3_g4b"/>
                 </lceExplanation>
-                <lcHotspotMap2>
+                <lceGraphicInteractionMap>
                     <image href="planets.jpg" id="image_wmy_tsx_ddb"/>
-                    <lcArea2>
+                    <lceGraphicInteractionArea>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>49, 51, 50, 30</lcAreaCoords2>
                         <lcCorrectResponse2/>
-                    </lcArea2>
-                    <lcArea2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>19, 69, 50, 30</lcAreaCoords2>
-                    </lcArea2>
-                    <lcArea2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>65, 35, 30, 30</lcAreaCoords2>
-                    </lcArea2>
-                    <lcArea2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
                         <lcAreaShape2>rect</lcAreaShape2>
                         <lcAreaCoords2>90, 30, 30, 30</lcAreaCoords2>
-                    </lcArea2>
-                </lcHotspotMap2>
-            </lceHotspot>
+                    </lceGraphicInteractionArea>
+                </lceGraphicInteractionMap>
+            </lceGraphicHotspot>
         </lcInteraction>
     </learningAssessmentbody>
 </learningAssessment>

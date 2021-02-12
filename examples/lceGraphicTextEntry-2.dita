@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:3.0" id="gte-2">
+    <title>Airport tags</title>
+    <learningAssessmentbody>
+        <lcIntro id="lcIntro_yvw_ydl_scb">
+            <p>The International Air Transport Association assigns three-letter codes to identify
+                airports worldwide. For example, London Heathrow has code LHR.</p>
+        </lcIntro>
+        <lcInteraction id="lcInteraction_nlx_dll_scb">
+            <lceGraphicTextEntry>
+                <lcQuestion2>
+                    <p>Some of the labels on the following diagram are missing: can you fill in the
+                        correct three-letter codes for the unlabeled airports?</p>
+                </lcQuestion2>
+                <lceGraphicInteractionMap id="lceGTEMap_b5h_pll_scb">
+                    <image href="GB_airports.jpg" id="image_x4d_hml_scb"/>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte-2/te001"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>12,108,39,121</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte-2/te002"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>128,103,155,126</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#gte-2/te003"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>66,165,93,178</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+
+                </lceGraphicInteractionMap>
+                <lceTextEntryGroup>
+                    <lceTextEntryOptions id="te001">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>GLA</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>gla</lceAnswerContentInline>
+                            <lceAlternativeResponse/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="te002">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>EDI</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                    <lceTextEntryOptions id="te003">
+                        <lceAnswerOptionInline>
+                            <lceAnswerContentInline>MAN</lceAnswerContentInline>
+                            <lcCorrectResponse2/>
+                        </lceAnswerOptionInline>
+                    </lceTextEntryOptions>
+                </lceTextEntryGroup>
+            </lceGraphicTextEntry>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>
