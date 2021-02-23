@@ -29,11 +29,11 @@
                 <navtitle>lce graphic interactions</navtitle>
             </topicmeta>
             <topicref href="lceGaphicAssociate.dita"/>
-            <topicref href="lceHotspot.dita"/>
             <topicref href="lceGraphicGapMatch_States-2.dita"/>
             <topicref href="lceGraphicGapMatch-2.dita"/>
             <topicref href="lceGraphicTextEntry_counting-pyramid-2.dita"/>
             <topicref href="lceGraphicTextEntry-2.dita"/>
+            <topicref href="lceGraphicHotspot.dita"/>
         </topicgroup>
         <topicgroup>
             <topicmeta>
@@ -50,6 +50,13 @@
             </topicmeta>
             <topicref href="lcePuzzle_acrostic.dita"/>
             <topicref href="lcePuzzle_crossword.dita"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce others</navtitle>
+            </topicmeta>
+            <topicref href="lceChoiceInteraction.dita"/>
+            <topicref href="lceOrderInteraction.dita"/>
         </topicgroup>
     </topicgroup>
     <topicgroup>

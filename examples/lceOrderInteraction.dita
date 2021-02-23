@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:3.0" id="a01">
+    <title>Sentencens</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceOrderInteraction>
+                <lcQuestion2><p>Put the woords in the right order.</p></lcQuestion2>
+                <lcSequenceOptionGroup2 shuffle="yes">
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>Ben</lcAnswerContent2>
+                        <lcSequence2 value="01"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>plays</lcAnswerContent2>
+                        <lcSequence2 value="02"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>the</lcAnswerContent2>
+                        <lcSequence2 value="03"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>guitar</lcAnswerContent2>
+                        <lcSequence2 value="04"></lcSequence2>
+                    </lcSequenceOption2>
+                </lcSequenceOptionGroup2>
+                <lcSequenceOptionGroup2 shuffle="yes">
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>Rita</lcAnswerContent2>
+                        <lcSequence2 value="05"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>is</lcAnswerContent2>
+                        <lcSequence2 value="06"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>the</lcAnswerContent2>
+                        <lcSequence2 value="07"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>singer</lcAnswerContent2>
+                        <lcSequence2 value="08"></lcSequence2>
+                    </lcSequenceOption2>
+                </lcSequenceOptionGroup2>
+                <lcSequenceOptionGroup2 shuffle="yes">
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>John</lcAnswerContent2>
+                        <lcSequence2 value="09"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>writes</lcAnswerContent2>
+                        <lcSequence2 value="10"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>the</lcAnswerContent2>
+                        <lcSequence2 value="11"></lcSequence2>
+                    </lcSequenceOption2>
+                    <lcSequenceOption2>
+                        <lcAnswerContent2>songs</lcAnswerContent2>
+                        <lcSequence2 value="12"></lcSequence2>
+                    </lcSequenceOption2>
+                </lcSequenceOptionGroup2>
+            </lceOrderInteraction>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:3.0" id="ex02">
-    <title>Hotspot with explanation</title>
+    <title>Hotspot</title>
     <learningAssessmentbody>
-        <lcIntro>The lceHotspot is more or less the same as the lcHotspot2 beside that the new LCe
-            element lceExplanation is allowed. That couldn't be added to the lcHotspot2 element
-            because of its tight content model.</lcIntro>
         <lcInteraction>
             <lceGraphicHotspot>
                 <lcQuestion2><p>Which of these plantes is Saturn?</p>
