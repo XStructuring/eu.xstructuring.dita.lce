@@ -15,14 +15,26 @@
         </topicmeta>
         <topicgroup>
             <topicmeta>
-                <navtitle>lce interations</navtitle>
+                <navtitle>lce open interations</navtitle>
             </topicmeta>
             <topicref href="lcePerformQuestion.dita"/>
             <topicref href="lceDrawing.dita" navtitle="lceDrawing"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce inline interactions</navtitle>
+            </topicmeta>
+            <topicref href="lceGapMatch.dita"/>
+            <topicref href="lceHottext.dita"/>
+            <topicref href="lceInlineChoice.dita"/>
+            <topicref href="lceTextEntry_MrsWhite.dita"/>
+        </topicgroup>
+        <topicgroup>
+            <topicmeta>
+                <navtitle>lce matching interactions</navtitle>
+            </topicmeta>
             <topicref href="lceChainMatching.dita"/>
             <topicref href="lceMultipleMatch.dita"/>
-            <topicref href="lcSingleSelect2_with_explanation.dita"/>
-            <topicref href="lceBox_in_question_intro.dita"/>
         </topicgroup>
         <topicgroup>
             <topicmeta>
@@ -37,15 +49,6 @@
         </topicgroup>
         <topicgroup>
             <topicmeta>
-                <navtitle>lce inline interactions</navtitle>
-            </topicmeta>
-            <topicref href="lceTextEntry_MrsWhite.dita"/>
-            <topicref href="lceInlineChoice.dita"/>
-            <topicref href="lceHottext.dita"/>
-            <topicref href="lceGapMatch.dita"/>
-        </topicgroup>
-        <topicgroup>
-            <topicmeta>
                 <navtitle>lce puzzle interactions</navtitle>
             </topicmeta>
             <topicref href="lcePuzzle_acrostic.dita"/>
@@ -57,18 +60,20 @@
             </topicmeta>
             <topicref href="lceChoiceInteraction.dita"/>
             <topicref href="lceOrderInteraction.dita"/>
+            <topicref href="lcSingleSelect2_with_explanation.dita"/>
+            <topicref href="lceBox_in_question_intro.dita"/>
         </topicgroup>
     </topicgroup>
     <topicgroup>
         <topicmeta>
             <navtitle>Example DITA L+T learningAssessment topics</navtitle>
         </topicmeta>
-        <topicref href="lcHotspot.dita"/>
-        <topicref href="lcMatching2.dita"/>
-        <topicref href="lcMultipleSelect2.dita"/>
         <topicref href="lcOpenQuestion2.dita"/>
-        <topicref href="lcSequencing2.dita"/>
         <topicref href="lcSingleSelect2.dita"/>
+        <topicref href="lcMultipleSelect2.dita"/>
+        <topicref href="lcMatching2.dita"/>
+        <topicref href="lcSequencing2.dita"/>
+        <topicref href="lcHotspot.dita"/>
         <topicref href="lcTrueFalse2.dita"/>
     </topicgroup>
 </map>

@@ -20,20 +20,20 @@
                 </lceMatchSet2>
                 <lceMatchMap>
                     <lceMatchPair>
-                        <lceAssociable href="#./i1"/>
-                        <lceAssociable href="#./m2"/>
+                        <lceAssociable href="#mm1/i1"/>
+                        <lceAssociable href="#mm1/m2"/>
                     </lceMatchPair>
                     <lceMatchPair>
-                        <lceAssociable href="#./i2"/>
-                        <lceAssociable href="#./m1"/>
+                        <lceAssociable href="#mm1/i2"/>
+                        <lceAssociable href="#mm1/m1"/>
                     </lceMatchPair>
                     <lceMatchPair>
-                        <lceAssociable href="#./i3"/>
-                        <lceAssociable href="#./m1"/>
+                        <lceAssociable href="#mm1/i3"/>
+                        <lceAssociable href="#mm1/m1"/>
                     </lceMatchPair>
                     <lceMatchPair>
-                        <lceAssociable href="#./i4"/>
-                        <lceAssociable href="#./m3"/>
+                        <lceAssociable href="#mm1/i4"/>
+                        <lceAssociable href="#mm1/m3"/>
                     </lceMatchPair>
                 </lceMatchMap>
             </lceMultipleMatch>
