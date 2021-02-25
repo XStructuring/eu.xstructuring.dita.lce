@@ -2,53 +2,56 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
     <xs:annotation>
         <xs:appinfo>
-            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcega-d)</dita:domainsModule>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceggm2-d)</dita:domainsModule>
         </xs:appinfo>
     </xs:annotation>
     
-    <xs:group name="lceGraphicAssociate">
+    <xs:group name="lceGraphicGapMatch2">
         <xs:sequence>
             <xs:choice>
-                <xs:element ref="lceGraphicAssociate"/>
+                <xs:element ref="lceGraphicGapMatch2"/>
             </xs:choice>
         </xs:sequence>
     </xs:group>
     
-
-   <!-- ======================================================================== -->
+    
+    
+<!-- ================================================================= -->
+      
+    
      
-    <xs:element name="lceGraphicAssociate">
+    <xs:element name="lceGraphicGapMatch2">
         <xs:annotation>
-            <xs:documentation>In a lceGraphicAssociate interaction, the learner matches hotspots on an image </xs:documentation>
+            <xs:documentation>In a lceGraphicGapMatch2 interaction, the learner drag en drop text and/or images to an image </xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>
-                <xs:extension base="lceGraphicAssociate.class">
+                <xs:extension base="lceGraphicGapMatch2.class">
                     <xs:attribute ref="class"
-                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lcega-d/lceGraphicAssociate "/>
+                        default="+ topic/div learningInteractionBase2-d/lcInteractionBase2 lceggm2-d/lceGraphicGapMatch2 "/>
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="lceGraphicAssociate.class">
+    <xs:complexType name="lceGraphicGapMatch2.class">
         <xs:sequence>
-            <xs:group ref="lceGraphicAssociate.content"/>
+            <xs:group ref="lceGraphicGapMatch2.content"/>
         </xs:sequence>
-        <xs:attributeGroup ref="lceGraphicAssociate.attributes"/>
+        <xs:attributeGroup ref="lceGraphicGapMatch2.attributes"/>
     </xs:complexType>
-    <xs:group name="lceGraphicAssociate.content">
+    <xs:group name="lceGraphicGapMatch2.content">
         <xs:sequence>
             <xs:group ref="lcInteractionLabel2" minOccurs="0"/>
             <xs:group ref="lcQuestion2"/>
             <xs:group ref="lceExplanation" minOccurs="0" maxOccurs="unbounded"/>
             <xs:group ref="lceGraphicInteractionMap"/>
-            <xs:group ref="lceMatchMap"/>
+            <xs:group ref="lceGapOptionGroup"/>
             <xs:group ref="lcFeedbackIncorrect2" minOccurs="0"/>
             <xs:group ref="lcFeedbackCorrect2" minOccurs="0"/>
             <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:group>
-    <xs:attributeGroup name="lceGraphicAssociate.attributes">
+    <xs:attributeGroup name="lceGraphicGapMatch2.attributes">
         <xs:attribute name="id" type="xs:NMTOKEN"/>
         <xs:attributeGroup ref="conref-atts"/>
         <xs:attributeGroup ref="select-atts"/>
@@ -56,5 +59,7 @@
         <xs:attribute name="outputclass" type="xs:string"/>
         <xs:attributeGroup ref="global-atts"/>
     </xs:attributeGroup>
-    
+
+
+
 </xs:schema>

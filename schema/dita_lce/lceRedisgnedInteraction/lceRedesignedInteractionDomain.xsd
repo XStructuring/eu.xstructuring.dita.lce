@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lceredesigned-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceredesignedinteraction-d-div">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceChoiceInteraction"/>
+                <xs:element ref="lceOrderInteraction"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceredesignedinteraction-d-lcInteractionBase2">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceChoiceInteraction"/>
+                <xs:element ref="lceOrderInteraction"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+
+</xs:schema>

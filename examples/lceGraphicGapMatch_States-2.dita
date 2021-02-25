@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:dita13lce:names:xsd:lceLearningAssessment.xsd:3.0" id="ggm0102">
+    <title>USA states</title>
+    <learningAssessmentbody>
+        <lcInteraction>
+            <lceGraphicGapMatch2>
+                <lcQuestion2><p>Dag and drop the names of the states to the appropriate places</p></lcQuestion2>
+                <lceGraphicInteractionMap>
+                    <image href="kaart.jpg" id="image_px1_qck_gbb"/>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#ggm0102/g1"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>59, 51, 80, 30</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#ggm0102/g2"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>216, 224, 80, 30</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                    <lceGraphicInteractionArea>
+                        <lceGap href="#ggm0102/g3"/>
+                        <lcAreaShape2>rect</lcAreaShape2>
+                        <lcAreaCoords2>430, 53, 80, 30</lcAreaCoords2>
+                    </lceGraphicInteractionArea>
+                </lceGraphicInteractionMap>
+                <lceGapOptionGroup>
+                    <lceGapOption id="g1"><lceGapContent>Soth Dakota</lceGapContent></lceGapOption>
+                    <lceGapOption id="g2"><lceGapContent>Colorado</lceGapContent></lceGapOption>
+                    <lceGapOption id="g3"><lceGapContent>Texas</lceGapContent></lceGapOption>
+                </lceGapOptionGroup>
+            </lceGraphicGapMatch2>
+        </lcInteraction>
+    </learningAssessmentbody>
+</learningAssessment>

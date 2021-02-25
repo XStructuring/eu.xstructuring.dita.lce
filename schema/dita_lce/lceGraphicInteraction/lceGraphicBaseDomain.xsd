@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+    <xs:annotation>
+        <xs:appinfo>
+            <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(lce lcegraphicbase-d)</dita:domainsModule>
+        </xs:appinfo>
+    </xs:annotation>
+    
+    <xs:group name="lceGraphicInteractionMap">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicInteractionMap"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:group name="lceGraphicInteractionArea">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceGraphicInteractionArea"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:element name="lceGraphicInteractionMap">
+        <xs:annotation>
+            <xs:documentation>A lceGraphicInteractionMap lets you designate an action area or region over an image, allowing to drag and drop,  fill in text or just click in that region to get scored as correct or incorrect in response to an interaction question. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGraphicInteractionMap.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/fig learningInteractionBase2-d/fig lcegraphicbase-d/lceGraphicInteractionMap "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGraphicInteractionMap.class">
+        <xs:sequence>
+            <xs:group ref="lceGraphicInteractionMap.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGraphicInteractionMap.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGraphicInteractionMap.content">
+        <xs:sequence>
+            <xs:group ref="image"/>
+            <xs:group ref="lceGraphicInteractionArea" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGraphicInteractionMap.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    <xs:element name="lceGraphicInteractionArea">
+        <xs:annotation>
+            <xs:documentation>A lceGraphicInteractionArea defines an area on the image where the answer must be dropped, filled in or just be clicked on </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceGraphicInteractionArea.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/figgroup learningInteractionBase2-d/figgroup lcegraphicbase-d/lceGraphicInteractionArea "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceGraphicInteractionArea.class">
+        <xs:sequence>
+            <xs:group ref="lceGraphicInteractionArea.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceGraphicInteractionArea.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceGraphicInteractionArea.content">
+        <xs:sequence>
+            <xs:group ref="lceGap" minOccurs="0" maxOccurs="1"/>
+            <xs:group ref="lcAreaShape2" minOccurs="1"/>
+            <xs:group ref="lcAreaCoords2" minOccurs="1"/>
+            <xs:group ref="lcCorrectResponse2" minOccurs="0"/>
+            <xs:group ref="lcFeedback2" minOccurs="0"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceGraphicInteractionArea.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+
+</xs:schema>

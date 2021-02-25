@@ -6,6 +6,13 @@
         </xs:appinfo>
     </xs:annotation>
     
+    <xs:group name="lceTextEntryOptions">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element ref="lceTextEntryOptions"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group> 
     
     <xs:group name="lceAnswerOptionInline">
         <xs:sequence>
@@ -24,6 +31,40 @@
     </xs:group>
     
 <!-- ============================================================= -->
+    <xs:element name="lceTextEntryOptions">
+        <xs:annotation>
+            <xs:documentation>
+                In the lceTextEntryOptions the correct and alternatives answers are defined.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="lceTextEntryOptions.class">
+                    <xs:attribute ref="class"
+                        default="+ topic/ph learningInteractionBase2-d/ph lcetextentry-d/lceTextEntryOptions "/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="lceTextEntryOptions.class">
+        <xs:sequence>
+            <xs:group ref="lceTextEntryOptions.content"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="lceTextEntryOptions.attributes"/>
+    </xs:complexType>
+    <xs:group name="lceTextEntryOptions.content">
+        <xs:sequence>
+            <xs:group ref="data" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:group ref="lceAnswerOptionInline" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="lceTextEntryOptions.attributes">
+        <xs:attributeGroup ref="univ-atts"/>
+        <xs:attribute name="outputclass" type="xs:string"/>
+        <xs:attributeGroup ref="global-atts"/>
+    </xs:attributeGroup>
+    
+    
     <xs:element name="lceAnswerOptionInline">
         <xs:annotation>
             <xs:documentation>The lceAnswerOption contains the answers for a gap in an textEntry</xs:documentation>

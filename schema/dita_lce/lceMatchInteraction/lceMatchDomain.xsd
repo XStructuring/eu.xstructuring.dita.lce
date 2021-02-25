@@ -93,7 +93,7 @@
     
     <xs:element name="lceAssociable">
         <xs:annotation>
-            <xs:documentation>Reference to an item or matchitem </xs:documentation>
+            <xs:documentation>Reference to an item or matchitem within the lceMultipleMatch or to lceGraphicInteractionArea within the lceGraphicAssociate</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:complexContent>

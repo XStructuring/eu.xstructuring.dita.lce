@@ -26,7 +26,7 @@
                 <p><ph>Dolly</ph><q>Hi Hans. How are you?</q></p>
             </div>
         </section>
-        <section contentclass="excerpt" outputclass="linenumbers">
+        <section contentclass="excerpt" outputclass="paranumbers">
             <title><ph>Umberto Eco</ph>Im Wald der Fiktionen. Sechs Streifzüge durch die Literatur</title>
             <p>Es war einmal … „ein König!“, werden meine lieben Zuhörer sofort sagen. Richtig,
                 diesmal habt ihr’s erraten. Es war einmal der letzte König von Italien, Vittorio

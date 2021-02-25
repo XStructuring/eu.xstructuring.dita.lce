@@ -14,11 +14,28 @@
       
     </xs:annotation>
   
-  <xs:attributeGroup name="lceAnswertypeAtt-d-attribute">
+  <xs:attributeGroup name="lceAnswerAtt-d-attribute">
     <xs:attribute name="answertype" type="answertype-atts.class" use="optional">
       <xs:annotation>
         <xs:documentation>This attribute should only be uesd with answer elements.
         </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="answerlength" type="answerlength-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute should only be uesd with gap answer elements. If the length for a gab is not defined than the output applicatie has to.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="answerformat" type="answerformat-atts.class" use="optional">
+      <xs:annotation>
+        <xs:documentation>This attribute should be used with gap answer elements. The attribute gives information over the kind of format in the gap.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="answernumbercorrect" type="xs:integer">
+      <xs:annotation>
+        <xs:documentation>This attribute should be used with the lceChoiceInteraction or lceGraphicHotspot. In the lceGraphicHotspot this would be used when each hotspot is correct but only a certain amount must be choosen. </xs:documentation>
       </xs:annotation>
     </xs:attribute>
   </xs:attributeGroup>
@@ -30,15 +47,6 @@
     </xs:restriction>
   </xs:simpleType>
   
-  <xs:attributeGroup name="lceAnswerlengthAtt-d-attribute">
-    <xs:attribute name="answerlength" type="answerlength-atts.class" use="optional">
-      <xs:annotation>
-        <xs:documentation>This attribute should only be uesd with gap answer elements. If the length for a gab is not defined than the output applicatie has to.
-        </xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:attributeGroup>
-  
   <xs:simpleType name="answerlength-atts.class">
     <xs:restriction base="xs:string">
       <xs:enumeration value="xs"/>
@@ -49,21 +57,17 @@
     </xs:restriction>
   </xs:simpleType>
     
-    <xs:attributeGroup name="lceAnswerformatAtt-d-attribute">
-      <xs:attribute name="answerformat" type="answerformat-atts.class" use="optional">
-        <xs:annotation>
-          <xs:documentation>This attribute should be uesd with gap answer elements. The attribute gives information over the kind of format in the gap.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-    </xs:attributeGroup>
-    
     <xs:simpleType name="answerformat-atts.class">
       <xs:restriction base="xs:string">
         <xs:enumeration value="text"/>
-        <xs:enumeration value="numerical"/>
+        <xs:enumeration value="math"/>
+        <xs:enumeration value="decimal"/>
+        <xs:enumeration value="integer"/>
+        <xs:enumeration value="date"/>
       </xs:restriction>
   </xs:simpleType>
+  
+  
   
 
 </xs:schema>
