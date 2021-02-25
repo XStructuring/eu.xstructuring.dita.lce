@@ -7,11 +7,16 @@
 * Add new attributes: 
     * contentclass: semantic meaning of an element
     * answerlength: expected length of an answer
-    * answerformat: string or number
+    * answerformat: string, integer, decimal, date and math
     * placeholder: for text which can be overwritten by the user
 * Add new element: lceBox. Based on fig. Can be used everywhere fig can be used.
-* Add new interaction: lceHotspot. In this hotspot question the element lceExplanation can be used.
-
+* Redesigned all graphic interactions. All now use a standard base content model with lceGraphicInteractionMap and lceGraphicInteractionArea as main elements.
+* Changed: lceGraphicTextEntry and lceGraphicAssociate. Both are not downwards compatible.
+* Add new interactions: 
+    * lceGraphicGapMatch2. The old lceGraphicGapMtch still remains because it is used quite a lot. New user should use lceGraphicGapMatch2
+    * lceGraphiHotspot. In this hotspot question the element lceExplanation can be used.
+    * lceChoiceInteraction. The child lcAnswerOptionGroup2 is allowed more often. Text can be put in between.
+    * lceOrderInteraction. The child lcSequenceOptionGroup2 is allowed more often. Text can be put in between.
 
 ## Version 2.3 / 2.4
 * Add new interaction: lceGraphicAssociate - interaction where you can reate hotspots and set relation between hotspots (drawing lines)
